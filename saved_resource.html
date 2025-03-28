@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html lang="en" class="scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="{{project.meta.ogDescription}}">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="{{project.meta.robotsMeta}}">
+      
+      <title>{{project.seoTitle}}</title>
+      <!-- SEO Description -->
+      <meta name="description" content="{{project.seoDescription}}">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet">
+
+       
+      
+      <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet">
+
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com/" as="script">
+      
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+      </script>
+
+      <!-- Preconnect -->
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+      <!-- Font stylesheet -->
+
+      <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com/"></script>
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                  DEFAULT: '{{settings.colors.primary}}',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8', 
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  DEFAULT: '{{settings.colors.secondary}}',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3', 
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  DEFAULT: '{{settings.colors.accent}}',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3', 
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['{{settings.fonts.primary}}', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['{{settings.fonts.secondary}}', 'Inter', 'system-ui', 'sans-serif'],
+                body: ['{{settings.fonts.secondary}}', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      });
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="{{project.meta.ogDescription}}">
+      <meta name="keywords" content="{{project.meta.keywords}}">
+      <meta name="robots" content="{{project.meta.robotsMeta}}">
+      <meta name="google-site-verification" content="{{project.meta.googleVerification}}">
+      <meta name="baidu-verification" content="{{project.meta.baiduVerification}}">
+      <meta name="yandex-verification" content="{{project.meta.yandexVerification}}">
+      <meta name="bing-verification" content="{{project.meta.bingVerification}}">
+      <meta property="og:title" content="{{project.meta.ogTitle}}">
+      <meta property="og:description" content="{{project.meta.ogDescription}}">
+      <meta property="og:image" content="{{project.meta.ogImage}}">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="{{project.name}}">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="{{project.meta.ogTitle}}">
+      <meta name="twitter:description" content="{{project.meta.ogDescription}}">
+      <meta name="twitter:image" content="{{project.meta.ogImage}}">
+    
+      
+      <link rel="icon" type="image/x-icon" href="https://rollout.site/projects/smartparcel-aivzrw/%7B%7Bsettings.favicon%7D%7D">
+      
+      <style>
+          h1, h2, h3, h4, h5, h6 {
+            font-family: Space Grotesk, sans-serif, system-ui, sans-serif;
+          }
+          body {
+            font-family: Inter, sans-serif, system-ui, sans-serif;
+          }
+        </style>
+   <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:{{settings.fonts.primary}}, Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.inset-4{inset:1rem}.-bottom-8{bottom:-2rem}.-top-4{top:-1rem}.bottom-0{bottom:0px}.bottom-1\/3{bottom:33.333333%}.bottom-1\/4{bottom:25%}.bottom-20{bottom:5rem}.left-0{left:0px}.left-1\/2{left:50%}.left-1\/3{left:33.333333%}.left-1\/4{left:25%}.left-20{left:5rem}.right-1\/3{right:33.333333%}.right-1\/4{right:25%}.right-20{right:5rem}.top-0{top:0px}.top-1\/2{top:50%}.top-1\/3{top:33.333333%}.top-1\/4{top:25%}.top-20{top:5rem}.-z-10{z-index:-10}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-4{margin-top:1rem;margin-bottom:1rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-10{margin-left:2.5rem}.ml-2{margin-left:0.5rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mt-12{margin-top:3rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-1\/2{height:50%}.h-1\/3{height:33.333333%}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-3{height:0.75rem}.h-32{height:8rem}.h-4{height:1rem}.h-40{height:10rem}.h-48{height:12rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-72{height:18rem}.h-8{height:2rem}.h-96{height:24rem}.h-\[600px\]{height:600px}.h-full{height:100%}.h-px{height:1px}.min-h-\[70vh\]{min-height:70vh}.min-h-screen{min-height:100vh}.w-1\/2{width:50%}.w-1\/3{width:33.333333%}.w-12{width:3rem}.w-2{width:0.5rem}.w-2\/3{width:66.666667%}.w-3{width:0.75rem}.w-3\/4{width:75%}.w-32{width:8rem}.w-4{width:1rem}.w-4\/5{width:80%}.w-40{width:10rem}.w-48{width:12rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-72{width:18rem}.w-8{width:2rem}.w-96{width:24rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-rotate-45{--tw-rotate:-45deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-45{--tw-rotate:45deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes float{0%, 100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.animate-float{animation:float 3s ease-in-out infinite}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}@keyframes spin{to{transform:rotate(360deg)}}.animate-spin{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.animate-spin-slow{animation:spin 3s linear infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.scroll-smooth{scroll-behavior:smooth}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-r-2{border-right-width:2px}.border-t{border-top-width:1px}.border-t-2{border-top-width:2px}.border-dashed{border-style:dashed}.border-\[\#00F5FF\]{--tw-border-opacity:1;border-color:rgb(0 245 255 / var(--tw-border-opacity, 1))}.border-\[\#00F5FF\]\/20{border-color:rgb(0 245 255 / 0.2)}.border-\[\#00F5FF\]\/30{border-color:rgb(0 245 255 / 0.3)}.border-\[\#FF00FF\]\/20{border-color:rgb(255 0 255 / 0.2)}.border-\[\#FF00FF\]\/30{border-color:rgb(255 0 255 / 0.3)}.border-\[\#FF00FF\]\/50{border-color:rgb(255 0 255 / 0.5)}.border-blue-500\/20{border-color:rgb(59 130 246 / 0.2)}.border-blue-500\/30{border-color:rgb(59 130 246 / 0.3)}.border-blue-500\/50{border-color:rgb(59 130 246 / 0.5)}.border-cyan-400{--tw-border-opacity:1;border-color:rgb(34 211 238 / var(--tw-border-opacity, 1))}.border-cyan-500\/20{border-color:rgb(6 182 212 / 0.2)}.border-cyan-500\/30{border-color:rgb(6 182 212 / 0.3)}.border-cyan-500\/50{border-color:rgb(6 182 212 / 0.5)}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-green-500\/30{border-color:rgb(34 197 94 / 0.3)}.border-neutral-800{--tw-border-opacity:1;border-color:rgb(38 38 38 / var(--tw-border-opacity, 1))}.border-purple-500{--tw-border-opacity:1;border-color:rgb(168 85 247 / var(--tw-border-opacity, 1))}.border-purple-500\/20{border-color:rgb(168 85 247 / 0.2)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.border-red-500\/30{border-color:rgb(239 68 68 / 0.3)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-\[\#00F5FF\]{--tw-bg-opacity:1;background-color:rgb(0 245 255 / var(--tw-bg-opacity, 1))}.bg-\[\#00F5FF\]\/10{background-color:rgb(0 245 255 / 0.1)}.bg-\[\#00F5FF\]\/20{background-color:rgb(0 245 255 / 0.2)}.bg-\[\#FF00FF\]{--tw-bg-opacity:1;background-color:rgb(255 0 255 / var(--tw-bg-opacity, 1))}.bg-\[\#FF00FF\]\/10{background-color:rgb(255 0 255 / 0.1)}.bg-\[\#FF00FF\]\/20{background-color:rgb(255 0 255 / 0.2)}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-500\/10{background-color:rgb(59 130 246 / 0.1)}.bg-cyan-400\/50{background-color:rgb(34 211 238 / 0.5)}.bg-cyan-500{--tw-bg-opacity:1;background-color:rgb(6 182 212 / var(--tw-bg-opacity, 1))}.bg-cyan-500\/10{background-color:rgb(6 182 212 / 0.1)}.bg-cyan-500\/20{background-color:rgb(6 182 212 / 0.2)}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-green-500\/10{background-color:rgb(34 197 94 / 0.1)}.bg-green-500\/20{background-color:rgb(34 197 94 / 0.2)}.bg-neutral-500{--tw-bg-opacity:1;background-color:rgb(115 115 115 / var(--tw-bg-opacity, 1))}.bg-neutral-700{--tw-bg-opacity:1;background-color:rgb(64 64 64 / var(--tw-bg-opacity, 1))}.bg-neutral-800{--tw-bg-opacity:1;background-color:rgb(38 38 38 / var(--tw-bg-opacity, 1))}.bg-neutral-800\/50{background-color:rgb(38 38 38 / 0.5)}.bg-neutral-900{--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.bg-neutral-900\/30{background-color:rgb(23 23 23 / 0.3)}.bg-neutral-900\/50{background-color:rgb(23 23 23 / 0.5)}.bg-neutral-900\/90{background-color:rgb(23 23 23 / 0.9)}.bg-neutral-900\/95{background-color:rgb(23 23 23 / 0.95)}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-purple-500\/10{background-color:rgb(168 85 247 / 0.1)}.bg-purple-500\/20{background-color:rgb(168 85 247 / 0.2)}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-red-500\/10{background-color:rgb(239 68 68 / 0.1)}.bg-red-900\/20{background-color:rgb(127 29 29 / 0.2)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-\[radial-gradient\(\#00F5FF_1px\2c transparent_1px\)\]{background-image:radial-gradient(#00F5FF 1px,transparent 1px)}.bg-\[url\(\'data\:image\/svg\+xml\;base64\2c PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEY1RkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMTAgMTAiIG9wYWNpdHk9IjAuMSIvPjwvc3ZnPg\=\=\'\)\]{background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEY1RkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMTAgMTAiIG9wYWNpdHk9IjAuMSIvPjwvc3ZnPg==')}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-\[\#0A0F2D\]{--tw-gradient-from:#0A0F2D var(--tw-gradient-from-position);--tw-gradient-to:rgb(10 15 45 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#FF00FF\]{--tw-gradient-from:#FF00FF var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 0 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#FF00FF\]\/5{--tw-gradient-from:rgb(255 0 255 / 0.05) var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 0 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-500{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-cyan-400{--tw-gradient-from:#22d3ee var(--tw-gradient-from-position);--tw-gradient-to:rgb(34 211 238 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-cyan-500{--tw-gradient-from:#06b6d4 var(--tw-gradient-from-position);--tw-gradient-to:rgb(6 182 212 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-cyan-500\/20{--tw-gradient-from:rgb(6 182 212 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(6 182 212 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(168 85 247 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-red-500\/20{--tw-gradient-from:rgb(239 68 68 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(239 68 68 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-yellow-400{--tw-gradient-from:#facc15 var(--tw-gradient-from-position);--tw-gradient-to:rgb(250 204 21 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-\[\#00F5FF\]{--tw-gradient-to:rgb(0 245 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #00F5FF var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-neutral-900{--tw-gradient-to:rgb(23 23 23 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #171717 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#00F5FF\]{--tw-gradient-to:#00F5FF var(--tw-gradient-to-position)}.to-\[\#00F5FF\]\/5{--tw-gradient-to:rgb(0 245 255 / 0.05) var(--tw-gradient-to-position)}.to-\[\#0A0F2D\]{--tw-gradient-to:#0A0F2D var(--tw-gradient-to-position)}.to-blue-500{--tw-gradient-to:#3b82f6 var(--tw-gradient-to-position)}.to-blue-600{--tw-gradient-to:#2563eb var(--tw-gradient-to-position)}.to-cyan-500{--tw-gradient-to:#06b6d4 var(--tw-gradient-to-position)}.to-cyan-600{--tw-gradient-to:#0891b2 var(--tw-gradient-to-position)}.to-pink-500{--tw-gradient-to:#ec4899 var(--tw-gradient-to-position)}.to-purple-400{--tw-gradient-to:#c084fc var(--tw-gradient-to-position)}.to-purple-500{--tw-gradient-to:#a855f7 var(--tw-gradient-to-position)}.to-purple-500\/20{--tw-gradient-to:rgb(168 85 247 / 0.2) var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.to-yellow-600{--tw-gradient-to:#ca8a04 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-3{padding-bottom:0.75rem}.pb-8{padding-bottom:2rem}.pt-16{padding-top:4rem}.pt-2{padding-top:0.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-\[\#00F5FF\]{--tw-text-opacity:1;color:rgb(0 245 255 / var(--tw-text-opacity, 1))}.text-\[\#FF00FF\]{--tw-text-opacity:1;color:rgb(255 0 255 / var(--tw-text-opacity, 1))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-green-300{--tw-text-opacity:1;color:rgb(134 239 172 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-neutral-300{--tw-text-opacity:1;color:rgb(212 212 212 / var(--tw-text-opacity, 1))}.text-neutral-400{--tw-text-opacity:1;color:rgb(163 163 163 / var(--tw-text-opacity, 1))}.text-neutral-500{--tw-text-opacity:1;color:rgb(115 115 115 / var(--tw-text-opacity, 1))}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-10{opacity:0.1}.opacity-20{opacity:0.2}.opacity-30{opacity:0.3}.opacity-5{opacity:0.05}.opacity-90{opacity:0.9}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-2xl{--tw-blur:blur(40px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-lg{--tw-backdrop-blur:blur(16px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.delay-100{transition-delay:100ms}.delay-1000{transition-delay:1000ms}.delay-200{transition-delay:200ms}.delay-300{transition-delay:300ms}.delay-75{transition-delay:75ms}.duration-300{transition-duration:300ms}.\[background-size\:20px_20px\]{background-size:20px 20px}.hover\:-translate-y-2:hover{--tw-translate-y:-0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:transform:hover{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-blue-500\/50:hover{border-color:rgb(59 130 246 / 0.5)}.hover\:border-cyan-400\/50:hover{border-color:rgb(34 211 238 / 0.5)}.hover\:border-cyan-500\/50:hover{border-color:rgb(6 182 212 / 0.5)}.hover\:border-green-500\/50:hover{border-color:rgb(34 197 94 / 0.5)}.hover\:border-purple-400\/50:hover{border-color:rgb(192 132 252 / 0.5)}.hover\:border-purple-500\/50:hover{border-color:rgb(168 85 247 / 0.5)}.hover\:bg-\[\#00F5FF\]:hover{--tw-bg-opacity:1;background-color:rgb(0 245 255 / var(--tw-bg-opacity, 1))}.hover\:bg-cyan-500\/30:hover{background-color:rgb(6 182 212 / 0.3)}.hover\:bg-neutral-600:hover{--tw-bg-opacity:1;background-color:rgb(82 82 82 / var(--tw-bg-opacity, 1))}.hover\:bg-neutral-800:hover{--tw-bg-opacity:1;background-color:rgb(38 38 38 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-500\/30:hover{background-color:rgb(168 85 247 / 0.3)}.hover\:bg-red-600:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.hover\:bg-opacity-10:hover{--tw-bg-opacity:0.1}.hover\:bg-opacity-80:hover{--tw-bg-opacity:0.8}.hover\:from-blue-600:hover{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-cyan-600:hover{--tw-gradient-from:#0891b2 var(--tw-gradient-from-position);--tw-gradient-to:rgb(8 145 178 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-purple-600:hover{--tw-gradient-from:#9333ea var(--tw-gradient-from-position);--tw-gradient-to:rgb(147 51 234 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-blue-700:hover{--tw-gradient-to:#1d4ed8 var(--tw-gradient-to-position)}.hover\:to-cyan-600:hover{--tw-gradient-to:#0891b2 var(--tw-gradient-to-position)}.hover\:to-cyan-700:hover{--tw-gradient-to:#0e7490 var(--tw-gradient-to-position)}.hover\:to-pink-600:hover{--tw-gradient-to:#db2777 var(--tw-gradient-to-position)}.hover\:to-purple-600:hover{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.hover\:text-blue-800:hover{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.hover\:text-cyan-400:hover{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:not-sr-only:focus{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}.focus\:absolute:focus{position:absolute}.focus\:left-0:focus{left:0px}.focus\:top-0:focus{top:0px}.focus\:z-50:focus{z-index:50}.focus\:border-purple-500:focus{--tw-border-opacity:1;border-color:rgb(168 85 247 / var(--tw-border-opacity, 1))}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:p-4:focus{padding:1rem}.focus\:text-black:focus{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.group:hover .group-hover\:animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}.group:hover .group-hover\:opacity-20{opacity:0.2}@media (min-width: 640px){.sm\:px-3{padding-left:0.75rem;padding-right:0.75rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:mt-0{margin-top:0px}.md\:block{display:block}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme: dark){.dark\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}}</style><script src="https://rollout.site/js/rollout-dom-selector.js" id="dom-selector-script"></script><style>
+        @keyframes hoverGradientMove {
+          0% {
+            background-position: 100% 0%;
+          }
+          50% {
+            background-position: 0% 100%;
+          }
+          100% {
+            background-position: 100% 0%;
+          }
+        }
+
+        .section-highlight::after,
+        .component-highlight::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            -45deg,
+            rgba(0, 255, 255, 0.1) 0%,
+            rgba(0, 150, 255, 0.15) 50%,
+            rgba(0, 255, 255, 0.1) 100%
+          );
+          background-size: 200% 200%;
+          border: 2px dashed rgba(0, 200, 255, 0.6);
+          pointer-events: none;
+          z-index: 1000;
+          opacity: 0;
+          transition: opacity 0.2s;
+          animation: hoverGradientMove 2s ease infinite;
+        }
+
+        .highlight-active {
+          opacity: 1 !important;
+          transform: scale(1) !important;
+          border: 2px solid rgba(221, 255, 0, 0.85) !important;
+          box-shadow: 0 0 2px rgba(221, 255, 0, 0.3) !important;
+          background: linear-gradient(
+            45deg,
+            rgba(221, 255, 0, 0.12) 0%,
+            rgba(221, 255, 0, 0.15) 100%
+          ) !important;
+          overflow: hidden !important;
+          position: relative !important;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(-8px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style></head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col" id="el-2j3vdhv6">
+      <!-- Skip to main content link for accessibility -->
+      <a href="https://rollout.site/projects/smartparcel-aivzrw/edit#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black" id="el-hg46qdcs">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900" id="el-i3j6js4t">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        
+              <div id="14f403a8-9c27-49f3-82ea-a488efff30a6" data-section_id="14f403a8-9c27-49f3-82ea-a488efff30a6" class="page_sectionHighlight__ahPeD sectionCode">
+                
+<div id="root">
+  <section id="header" class="relative bg-neutral-900 min-h-[70vh]">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-sm border-b border-neutral-800" id="el-o2vblhqr">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-s60sswpy">
+        <div class="flex items-center justify-between h-16" id="el-h8eo35ff">
+          <!-- Logo -->
+          <div class="flex-shrink-0" id="el-5thwcl1h">
+            <span class="text-2xl font-bold bg-gradient-to-r from-[#FF00FF] to-[#00F5FF] bg-clip-text text-transparent" id="el-ra8xw72d">SmartParcel AI</span>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:block" id="el-8ahnvj9l">
+            <div class="ml-10 flex items-baseline space-x-4" id="el-0jmmvyy6">
+              <div class="system-element-placeholder bg-gray-100 text-gray-600 px-4 py-2 rounded border border-dashed border-gray-300 text-sm font-mono" data-tooltip="This is a system element that will be populated with the header navigation menu" id="el-9kf6jr6r">[System: Header Navigation Menu] <a href="https://rollout.site/projects/smartparcel-aivzrw/settings" target="_blank" rel="noopener noreferrer" class="ml-2 text-blue-600 hover:text-blue-800 underline inline-flex items-center" id="el-favg27bs">Customize header navigation <externallinkicon classname="ml-1 h-3 w-3" id="el-4o8d48k9"></externallinkicon></a></div>
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden" id="el-oaedpkw5">
+            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-neutral-400 hover:text-white hover:bg-neutral-800 focus:outline-none">
+              <span class="sr-only" id="el-0f1jatb4">Open main menu</span>
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-pfrq1080">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="el-g0y03bpf"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-neutral-900/95 backdrop-blur-sm">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="el-g9uqp9ul">
+          <div class="system-element-placeholder bg-gray-100 text-gray-600 px-4 py-2 rounded border border-dashed border-gray-300 text-sm font-mono" data-tooltip="This is a system element that will be populated with the header navigation menu" id="el-arg80btp">[System: Header Navigation Menu] <a href="https://rollout.site/projects/smartparcel-aivzrw/settings" target="_blank" rel="noopener noreferrer" class="ml-2 text-blue-600 hover:text-blue-800 underline inline-flex items-center" id="el-wwillxv7">Customize header navigation <externallinkicon classname="ml-1 h-3 w-3" id="el-13yf4r3d"></externallinkicon></a></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative flex items-center justify-center min-h-[70vh] overflow-hidden" id="el-q3pe9g75">
+      <!-- Animated Background -->
+      <div class="absolute inset-0 z-0" id="el-tjutcpp1">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#0A0F2D] via-neutral-900 to-[#0A0F2D] opacity-90" id="el-em8f2hhm"></div>
+        <div class="animate-pulse absolute inset-0 bg-[#FF00FF] opacity-5" id="el-1udlfv52"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-[url(&#39;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEY1RkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMTAgMTAiIG9wYWNpdHk9IjAuMSIvPjwvc3ZnPg==&#39;)] opacity-20" id="el-v4en9v68"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" id="el-3g9q07oa">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate__animated animate__fadeInDown" id="el-2maj759k">
+          <span class="bg-gradient-to-r from-[#FF00FF] to-[#00F5FF] bg-clip-text text-transparent" id="el-9z6ihgl3">AI-Powered</span>
+          <br id="el-bokcrafm">Smart Parcel Compliance System
+        </h1>
+        <p class="text-xl text-neutral-300 mb-8 max-w-2xl mx-auto animate__animated animate__fadeInUp" id="el-s6ft7h3q">Navigate the future of shipping with our cutting-edge AI compliance system. Real-time verification, automated customs, and intelligent route optimization.</p>
+        <div class="flex justify-center space-x-4 animate__animated animate__fadeInUp" id="el-zo8n399w">
+          <button class="px-8 py-3 bg-[#FF00FF] text-white rounded-lg hover:bg-opacity-80 transition-all transform hover:scale-105" id="el-m5fmypat">Get Started</button>
+          <button class="px-8 py-3 border border-[#00F5FF] text-[#00F5FF] rounded-lg hover:bg-[#00F5FF] hover:bg-opacity-10 transition-all transform hover:scale-105" id="el-75pcraug">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuButton.addEventListener('click', function() {
+    const isMenuHidden = mobileMenu.classList.contains('hidden');
+    
+    if (isMenuHidden) {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('animate__animated', 'animate__fadeIn');
+    } else {
+      mobileMenu.classList.add('animate__animated', 'animate__fadeOut');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('animate__animated', 'animate__fadeOut');
+      }, 500);
+    }
+  });
+});
+</script>
+
+              </div>
+            
+              <div id="b4aa7124-ccc7-4a29-8cb5-68e2c6609d0a" data-section_id="b4aa7124-ccc7-4a29-8cb5-68e2c6609d0a" class="page_sectionHighlight__ahPeD sectionCode">
+                
+<div id="root">
+  <section id="hero" class="relative min-h-screen bg-neutral-900 overflow-hidden">
+    <!-- Glassmorphism Dashboard -->
+    <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl z-20" id="el-gyt37ce2">
+      <div class="backdrop-blur-lg bg-neutral-900/30 border border-[#00F5FF]/20 rounded-2xl p-8 shadow-2xl animate__animated animate__fadeIn" id="el-tukg1sot">
+        <div class="relative" id="el-exeop6uw">
+          <!-- Dashboard Header -->
+          <div class="flex justify-between items-center mb-8" id="el-304fdor8">
+            <div class="flex items-center space-x-4" id="el-rzffqcyn">
+              <div class="h-3 w-3 bg-green-500 rounded-full animate-pulse" id="el-guab5k6l"></div>
+              <span class="text-[#00F5FF]" id="el-nhuaeobf">System Online</span>
+            </div>
+            <div class="text-neutral-400" id="el-avtn9gio">AI Status: Active</div>
+          </div>
+
+          <!-- Main Scanner UI -->
+          <div class="flex flex-col items-center justify-center space-y-8" id="el-7db4l00q">
+            <!-- Scanning Animation Circle -->
+            <div class="relative w-48 h-48" id="el-ur93fhzo">
+              <div class="absolute inset-0 border-4 border-[#FF00FF]/30 rounded-full animate-ping" id="el-0eba3u7u"></div>
+              <div class="absolute inset-0 border-2 border-[#00F5FF] rounded-full animate-spin" id="el-45eaxl2d"></div>
+              <div class="absolute inset-4 border border-[#FF00FF]/50 rounded-full" id="el-l4wsco6i"></div>
+              <div class="absolute inset-0 flex items-center justify-center" id="el-5z1j9day">
+                <span class="text-[#00F5FF] text-lg" id="el-xyprxtgk">Ready to Scan</span>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="group relative px-8 py-4 bg-gradient-to-r from-[#FF00FF] to-[#00F5FF] rounded-lg overflow-hidden transition-all duration-300 transform hover:scale-105" id="el-2rg1iomk">
+              <span class="relative z-10 text-white font-bold text-lg" id="el-kksjxcf2">Scan Your Shipment Now</span>
+              <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity" id="el-u8uva56c"></div>
+            </button>
+
+            <!-- Status Indicators -->
+            <div class="grid grid-cols-3 gap-6 w-full" id="el-2vd5csi2">
+              <div class="bg-neutral-800/50 backdrop-blur-sm p-4 rounded-lg border border-[#FF00FF]/20" id="el-e3bhajwf">
+                <div class="text-[#FF00FF]" id="el-hibtdmth">AI Compliance</div>
+                <div class="text-green-400" id="el-ak6o6y7x">✓ Verified</div>
+              </div>
+              <div class="bg-neutral-800/50 backdrop-blur-sm p-4 rounded-lg border border-[#00F5FF]/20" id="el-a3pcxaju">
+                <div class="text-[#00F5FF]" id="el-eoudi5zi">Documents</div>
+                <div class="text-yellow-400" id="el-9ub0zdkr">Processing...</div>
+              </div>
+              <div class="bg-neutral-800/50 backdrop-blur-sm p-4 rounded-lg border border-[#FF00FF]/20" id="el-yc8mterq">
+                <div class="text-[#FF00FF]" id="el-5jdnyfny">Route Status</div>
+                <div class="text-green-400" id="el-2afd8km9">Optimized</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0 z-10" id="el-j9v5shvl">
+      <!-- Grid Pattern -->
+      <div class="absolute inset-0 bg-[radial-gradient(#00F5FF_1px,transparent_1px)] opacity-10 [background-size:20px_20px]" id="el-ldoo9sj9"></div>
+      
+      <!-- Floating Elements -->
+      <div class="absolute top-20 left-20 w-32 h-32 bg-[#FF00FF]/10 rounded-full blur-2xl animate-pulse" id="el-lq25v9gd"></div>
+      <div class="absolute bottom-20 right-20 w-40 h-40 bg-[#00F5FF]/10 rounded-full blur-2xl animate-pulse" id="el-3ctjf970"></div>
+      
+      <!-- Scanner Lines -->
+      <div class="absolute inset-0 overflow-hidden" id="el-5x6xcz4e">
+        <div class="absolute h-px w-full bg-gradient-to-r from-transparent via-[#00F5FF] to-transparent top-1/2 animate-scan" id="el-etze7d4r"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+@keyframes scan {
+  0% { transform: translateY(-50vh); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(50vh); opacity: 0; }
+}
+
+.animate-scan {
+  animation: scan 4s linear infinite;
+}
+</style>
+
+              </div>
+            
+              <div id="20c92898-0af7-411b-833d-8ad9acba46da" data-section_id="20c92898-0af7-411b-833d-8ad9acba46da" class="page_sectionHighlight__ahPeD sectionCode">
+                
+<div id="root">
+  <section id="features" class="relative bg-neutral-800 py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-sopwgmwq">
+      <!-- Section Header -->
+      <div class="text-center mb-16" id="el-pz7kfz7s">
+        <h2 class="text-4xl font-bold bg-gradient-to-r from-[#FF00FF] to-[#00F5FF] bg-clip-text text-transparent mb-4 animate__animated animate__fadeInUp" id="el-55e92ex1">AI-Powered Features</h2>
+        <p class="text-neutral-300 max-w-2xl mx-auto" id="el-z5ov6bxo">Next-generation shipping compliance with advanced AI capabilities</p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="el-77qcfycz">
+        <!-- AI Compliance -->
+        <div class="group bg-neutral-900/50 backdrop-blur-sm border border-[#FF00FF]/20 rounded-xl p-6 hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" id="el-m3l473vd">
+          <div class="relative h-12 w-12 mb-4" id="el-61wuu014">
+            <div class="absolute inset-0 bg-[#FF00FF] rounded-lg opacity-20 group-hover:animate-ping" id="el-8pe505kg"></div>
+            <div class="relative flex items-center justify-center h-full w-full bg-neutral-800 rounded-lg border border-[#FF00FF]/30" id="el-m8wy0zel">
+              <span class="text-2xl" id="el-7yn342i7">🛂</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-[#FF00FF] mb-2" id="el-b2s9aor4">Real-Time Compliance</h3>
+          <p class="text-neutral-300" id="el-rsjth1xd">Automated verification with live scanning and instant feedback</p>
+        </div>
+
+        <!-- Route Optimization -->
+        <div class="group bg-neutral-900/50 backdrop-blur-sm border border-[#00F5FF]/20 rounded-xl p-6 hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;" id="el-dt1l4iwe">
+          <div class="relative h-12 w-12 mb-4" id="el-s0972k6r">
+            <div class="absolute inset-0 bg-[#00F5FF] rounded-lg opacity-20 group-hover:animate-ping" id="el-5wpq8qpv"></div>
+            <div class="relative flex items-center justify-center h-full w-full bg-neutral-800 rounded-lg border border-[#00F5FF]/30" id="el-7dpiri7x">
+              <span class="text-2xl" id="el-7peix4rz">🗺️</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-[#00F5FF] mb-2" id="el-2ola04qy">Smart Routing</h3>
+          <p class="text-neutral-300" id="el-ece8hdtu">AI-optimized path selection with real-time adjustments</p>
+        </div>
+
+        <!-- Document Analysis -->
+        <div class="group bg-neutral-900/50 backdrop-blur-sm border border-[#FF00FF]/20 rounded-xl p-6 hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;" id="el-wi4gzzpz">
+          <div class="relative h-12 w-12 mb-4" id="el-sxj7wtop">
+            <div class="absolute inset-0 bg-[#FF00FF] rounded-lg opacity-20 group-hover:animate-ping" id="el-bqbet366"></div>
+            <div class="relative flex items-center justify-center h-full w-full bg-neutral-800 rounded-lg border border-[#FF00FF]/30" id="el-t22xr01l">
+              <span class="text-2xl" id="el-lb9nqupr">📄</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-[#FF00FF] mb-2" id="el-cw7trfbd">Smart OCR</h3>
+          <p class="text-neutral-300" id="el-qpwzy7c5">Automated document processing and verification</p>
+        </div>
+
+        <!-- Restricted Items -->
+        <div class="group bg-neutral-900/50 backdrop-blur-sm border border-[#00F5FF]/20 rounded-xl p-6 hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;" id="el-wvtqfwgc">
+          <div class="relative h-12 w-12 mb-4" id="el-qddwxh57">
+            <div class="absolute inset-0 bg-[#00F5FF] rounded-lg opacity-20 group-hover:animate-ping" id="el-uz2emw4n"></div>
+            <div class="relative flex items-center justify-center h-full w-full bg-neutral-800 rounded-lg border border-[#00F5FF]/30" id="el-u4obu8sw">
+              <span class="text-2xl" id="el-fmmh2zgf">🔍</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-[#00F5FF] mb-2" id="el-278n64p3">Item Scanner</h3>
+          <p class="text-neutral-300" id="el-ohw2g2dv">Advanced detection of restricted and regulated items</p>
+        </div>
+
+        <!-- Customs & Tax -->
+        <div class="group bg-neutral-900/50 backdrop-blur-sm border border-[#FF00FF]/20 rounded-xl p-6 hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.8s;" id="el-cbdphstz">
+          <div class="relative h-12 w-12 mb-4" id="el-thwe8o13">
+            <div class="absolute inset-0 bg-[#FF00FF] rounded-lg opacity-20 group-hover:animate-ping" id="el-vo6pbn2m"></div>
+            <div class="relative flex items-center justify-center h-full w-full bg-neutral-800 rounded-lg border border-[#FF00FF]/30" id="el-bqtbx1su">
+              <span class="text-2xl" id="el-ushulnav">💰</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-[#FF00FF] mb-2" id="el-uhdixg2k">Duty Calculator</h3>
+          <p class="text-neutral-300" id="el-ba6gzl8v">Automated customs and tax estimation system</p>
+        </div>
+
+        <!-- Real-Time Tracking -->
+        <div class="group bg-neutral-900/50 backdrop-blur-sm border border-[#00F5FF]/20 rounded-xl p-6 hover:transform hover:scale-105 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 1s;" id="el-8amzv8rj">
+          <div class="relative h-12 w-12 mb-4" id="el-ed797uxf">
+            <div class="absolute inset-0 bg-[#00F5FF] rounded-lg opacity-20 group-hover:animate-ping" id="el-17gnlgyg"></div>
+            <div class="relative flex items-center justify-center h-full w-full bg-neutral-800 rounded-lg border border-[#00F5FF]/30" id="el-pmn9mlok">
+              <span class="text-2xl" id="el-7pu1fanm">🚚</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-[#00F5FF] mb-2" id="el-zbcvh4x6">Live Tracking</h3>
+          <p class="text-neutral-300" id="el-wr9gshee">Real-time parcel tracking with predictive alerts</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute inset-0 z-0" id="el-9li1hwti">
+      <div class="absolute inset-0 bg-[radial-gradient(#00F5FF_1px,transparent_1px)] opacity-5 [background-size:20px_20px]" id="el-m16tnyhf"></div>
+    </div>
+  </section>
+</div>
+
+              </div>
+            
+              <div id="facaee6c-d36e-4974-a48e-bbf82ba41566" data-section_id="facaee6c-d36e-4974-a48e-bbf82ba41566" class="page_sectionHighlight__ahPeD sectionCode">
+                
+<div id="root">
+  <section id="aiCompliance" class="relative min-h-screen bg-neutral-900 overflow-hidden">
+    <!-- AI Compliance Verification Container -->
+    <div class="container mx-auto px-4 py-16" id="el-v7ahy963">
+      <!-- Glass Panel -->
+      <div class="backdrop-blur-lg bg-white/10 rounded-2xl border border-white/20 p-8 shadow-2xl" id="el-b8n6ovpd">
+        <!-- Title -->
+        <h2 class="text-4xl font-bold text-cyan-400 mb-8 animate-pulse" id="el-g83gd612">
+          AI Compliance Verification
+        </h2>
+
+        <!-- 3D Holographic Scanner -->
+        <div class="relative h-96 mb-12" id="el-fuloiwhn">
+          <!-- Scanning Animation -->
+          <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 animate-scan rounded-lg" id="el-j99wosod"></div>
+          
+          <!-- Floating Parcel Container -->
+          <div class="absolute inset-0 flex items-center justify-center" id="el-26u8u447">
+            <div class="w-48 h-48 relative animate-float" id="el-t1adzgog">
+              <!-- Parcel Hologram -->
+              <div class="absolute inset-0 border-2 border-cyan-400 rounded-lg transform rotate-45 animate-pulse" id="el-9hiube60"></div>
+              <div class="absolute inset-0 border-2 border-purple-500 rounded-lg -rotate-45 animate-pulse delay-75" id="el-fzx4mwvp"></div>
+            </div>
+          </div>
+
+          <!-- Scanning Lines -->
+          <div class="absolute inset-0" id="el-pz78x1z0">
+            <div class="h-1 bg-cyan-400/50 animate-scanline" id="el-m13krgpe"></div>
+          </div>
+        </div>
+
+        <!-- AI Analysis Results -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="el-27j0ol0s">
+          <!-- Document Verification -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-white/10 hover:border-cyan-400/50 transition-all duration-300" id="el-t6osakfu">
+            <h3 class="text-2xl text-cyan-300 mb-4" id="el-7804uf4b">Document Analysis</h3>
+            <ul class="space-y-4" id="el-0kcaq7vx">
+              <li class="flex items-center text-green-400" id="el-82kurbt9">
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" id="el-ivmtzj8g">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" id="el-2o7t6ebf"></path>
+                </svg>
+                <span id="el-ehk7rqni">Invoice Verified</span>
+              </li>
+              <li class="flex items-center text-green-400" id="el-va39z08m">
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" id="el-ien793mo">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" id="el-ni56mnnv"></path>
+                </svg>
+                <span id="el-5jch6xoo">HS Code Matched</span>
+              </li>
+              <li class="flex items-center text-yellow-400" id="el-ho6rbydf">
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" id="el-xh247k0q">
+                  <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" id="el-hwkokt2p"></path>
+                </svg>
+                <span id="el-0a136a3k">Permit Review Required</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Compliance Status -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-white/10 hover:border-purple-400/50 transition-all duration-300" id="el-qji5n0qx">
+            <h3 class="text-2xl text-purple-300 mb-4" id="el-ldh7suu2">Compliance Status</h3>
+            <div class="flex flex-col space-y-4" id="el-wr9uj3ki">
+              <div class="flex items-center justify-between" id="el-cjm0yp06">
+                <span class="text-white" id="el-8cvvird5">Overall Status</span>
+                <span class="text-yellow-400" id="el-c2xwt6h6">Pending Review</span>
+              </div>
+              <div class="w-full bg-neutral-700 rounded-full h-4" id="el-gwu3kjqv">
+                <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 w-3/4 h-full rounded-full animate-pulse" id="el-jih4q25l"></div>
+              </div>
+              <button class="mt-4 bg-gradient-to-r from-cyan-500 to-purple-500 text-white py-2 px-6 rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105" id="el-fq8kxfts">
+                Review Documents
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Decorative Elements -->
+    <div class="absolute top-0 left-0 w-full h-full -z-10" id="el-v4y4yrzk">
+      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-cyan-500/20 rounded-full filter blur-3xl animate-pulse" id="el-zo0ryaje"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500/20 rounded-full filter blur-3xl animate-pulse delay-1000" id="el-1b0bjoiy"></div>
+    </div>
+  </section>
+</div>
+
+              </div>
+            
+              <div id="a87b4441-338a-42c4-a86c-266efea8b9a3" data-section_id="a87b4441-338a-42c4-a86c-266efea8b9a3" class="page_sectionHighlight__ahPeD sectionCode">
+                
+<div id="root">
+  <section id="restrictedScanner" class="relative min-h-screen bg-neutral-900 overflow-hidden">
+    <!-- Main Scanner Container -->
+    <div class="container mx-auto px-4 py-16 relative z-10" id="el-7knpaxax">
+      <!-- Glass Panel -->
+      <div class="backdrop-blur-lg bg-white/10 rounded-2xl border border-white/20 p-8 shadow-2xl" id="el-jpfrxzh5">
+        <h2 class="text-4xl font-bold text-red-500 mb-8 animate-pulse" id="el-0k6g8pf4">
+          Restricted Item Scanner
+        </h2>
+
+        <!-- 3D Scanner View -->
+        <div class="relative h-96 mb-12 bg-neutral-800/50 rounded-xl overflow-hidden" id="el-9zj1hnrj">
+          <!-- X-Ray Effect Container -->
+          <div class="absolute inset-0 flex items-center justify-center" id="el-ezcnmdtg">
+            <!-- Scanning Animation -->
+            <div class="w-64 h-64 relative" id="el-u9mw5bb4">
+              <!-- Parcel Wireframe -->
+              <div class="absolute inset-0 border-2 border-red-500 rounded-lg animate-spin-slow" id="el-9bifml6w"></div>
+              <!-- X-Ray Beam Effect -->
+              <div class="absolute inset-0 bg-gradient-to-t from-red-500/20 to-transparent animate-scan-vertical" id="el-86qu6aj9"></div>
+            </div>
+          </div>
+          
+          <!-- Scanning Grid -->
+          <div class="absolute inset-0 bg-grid-pattern opacity-20" id="el-2q2znk8b"></div>
+        </div>
+
+        <!-- Warning Alerts -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="el-6rkknl8k">
+          <!-- Detected Items -->
+          <div class="backdrop-blur-sm bg-red-900/20 rounded-xl p-6 border border-red-500/30 animate-pulse" id="el-ealto47w">
+            <h3 class="text-2xl text-red-400 mb-4" id="el-jhosupfb">⚠️ Restricted Items Detected</h3>
+            <ul class="space-y-4" id="el-ps8aaf4h">
+              <li class="flex items-center text-red-300" id="el-53be6g96">
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" id="el-qh2okmj6">
+                  <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" id="el-es7tjn3h"></path>
+                </svg>
+                <span id="el-g8yart3g">Hazardous Materials Detected</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Regulations -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-white/10" id="el-ic8eefw0">
+            <h3 class="text-2xl text-cyan-300 mb-4" id="el-pxhkka9z">Country Regulations</h3>
+            <div class="space-y-4" id="el-xs0qulm6">
+              <div class="floating-text animate-float" id="el-l22mvc5q">
+                <p class="text-white/80" id="el-vvy8wcr6">🚫 Import Prohibited - Class 3 Materials</p>
+              </div>
+              <div class="floating-text animate-float delay-100" id="el-rj3nnun4">
+                <p class="text-white/80" id="el-z7a9ebn4">📜 Special Permit Required</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-8 flex justify-center gap-4" id="el-vu0i4s8m">
+          <button class="bg-red-500 hover:bg-red-600 text-white py-3 px-8 rounded-lg transform hover:scale-105 transition-all duration-300" id="el-tg6kgf5l">
+            View Detailed Report
+          </button>
+          <button class="bg-neutral-700 hover:bg-neutral-600 text-white py-3 px-8 rounded-lg transform hover:scale-105 transition-all duration-300" id="el-qp9ct8xy">
+            Request Override
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute top-0 left-0 w-full h-full -z-10" id="el-fppqiv68">
+      <div class="absolute top-1/3 left-1/4 w-72 h-72 bg-red-500/10 rounded-full filter blur-3xl animate-pulse" id="el-9at9x2u6"></div>
+      <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" id="el-x2d0xvhx"></div>
+    </div>
+  </section>
+</div>
+
+              </div>
+            
+              <div id="de875543-d5fd-474c-9b32-2b6655edf4a9" data-section_id="de875543-d5fd-474c-9b32-2b6655edf4a9" class="page_sectionHighlight__ahPeD sectionCode">
+                
+<div id="root">
+  <section id="routeOptimization" class="relative min-h-screen bg-neutral-900 overflow-hidden">
+    <div class="container mx-auto px-4 py-16" id="el-efsod3b4">
+      <!-- Main Globe Container -->
+      <div class="backdrop-blur-lg bg-white/10 rounded-2xl border border-white/20 p-8 shadow-2xl" id="el-s8mthvu9">
+        <h2 class="text-4xl font-bold text-blue-400 mb-8 animate-pulse" id="el-tmm9sydp">
+          Route Optimization
+        </h2>
+
+        <!-- 3D Globe Visualization -->
+        <div class="relative h-[600px] mb-12 bg-neutral-800/50 rounded-xl overflow-hidden" id="el-ppihl1cp">
+          <!-- Globe Container -->
+          <div class="absolute inset-0 flex items-center justify-center" id="el-408ixfuv">
+            <div class="w-96 h-96 relative" id="el-feshicqh">
+              <!-- Simulated Globe -->
+              <div class="absolute inset-0 rounded-full border-2 border-blue-500/50 animate-spin-slow" id="el-o7964020"></div>
+              <div class="absolute inset-0 rounded-full border-2 border-cyan-500/30 animate-reverse-spin" id="el-hsyv2k1a"></div>
+              
+              <!-- Route Lines -->
+              <div class="absolute inset-0" id="el-3vgbst69">
+                <div class="absolute w-full h-full" id="el-cko4j0ea">
+                  <div class="absolute top-1/4 left-1/4 w-1/2 h-1/2 border-t-2 border-cyan-500/50 animate-pulse" id="el-sob7grpd"></div>
+                  <div class="absolute top-1/3 left-1/3 w-1/3 h-1/3 border-r-2 border-blue-500/50 animate-pulse delay-100" id="el-hs3i17c7"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Route Points -->
+          <div class="absolute inset-0" id="el-hc63q7e4">
+            <div class="absolute top-1/4 left-1/4 w-4 h-4 bg-cyan-500 rounded-full animate-ping" id="el-n897pcjm"></div>
+            <div class="absolute bottom-1/3 right-1/3 w-4 h-4 bg-blue-500 rounded-full animate-ping delay-300" id="el-mu43ejf5"></div>
+          </div>
+        </div>
+
+        <!-- Route Information -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="el-x19ccyo2">
+          <!-- Fastest Route -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-cyan-500/30 hover:border-cyan-500/50 transition-all duration-300" id="el-w1zcxxiy">
+            <h3 class="text-xl text-cyan-400 mb-4" id="el-llo8gk0z">Fastest Route</h3>
+            <div class="space-y-2" id="el-bh92hv7a">
+              <p class="text-white/80" id="el-hqg4zaft">Duration: 3 Days</p>
+              <p class="text-white/80" id="el-9t5y44t1">Mode: Air Freight</p>
+              <div class="w-full bg-neutral-700 rounded-full h-2 mt-4" id="el-xsjrmfwp">
+                <div class="bg-cyan-500 h-full rounded-full w-3/4 animate-pulse" id="el-zd9ltxce"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cheapest Route -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-green-500/30 hover:border-green-500/50 transition-all duration-300" id="el-jc63ig0b">
+            <h3 class="text-xl text-green-400 mb-4" id="el-4sz5i9e9">Most Economic</h3>
+            <div class="space-y-2" id="el-lwfpbf0u">
+              <p class="text-white/80" id="el-35i58zgo">Duration: 12 Days</p>
+              <p class="text-white/80" id="el-f2we5hlq">Mode: Sea Freight</p>
+              <div class="w-full bg-neutral-700 rounded-full h-2 mt-4" id="el-gpb35orn">
+                <div class="bg-green-500 h-full rounded-full w-1/2 animate-pulse" id="el-2oyix5a5"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Safest Route -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300" id="el-wrzsmug5">
+            <h3 class="text-xl text-purple-400 mb-4" id="el-ayw7yx7r">Safest Route</h3>
+            <div class="space-y-2" id="el-afo7pspc">
+              <p class="text-white/80" id="el-s8nemjxy">Duration: 5 Days</p>
+              <p class="text-white/80" id="el-qcf8dr7d">Mode: Combined</p>
+              <div class="w-full bg-neutral-700 rounded-full h-2 mt-4" id="el-yand7znc">
+                <div class="bg-purple-500 h-full rounded-full w-4/5 animate-pulse" id="el-n6zxbox1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="mt-8 flex justify-center" id="el-9uotvfxk">
+          <button class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-3 px-8 rounded-lg transform hover:scale-105 transition-all duration-300 hover:from-blue-600 hover:to-cyan-600" id="el-dg4ilvtq">
+            Optimize Route
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute top-0 left-0 w-full h-full -z-10" id="el-ui0equ29">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full filter blur-3xl animate-pulse" id="el-9krvioos"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" id="el-mviezymz"></div>
+    </div>
+  </section>
+</div>
+
+              </div>
+            
+              <div id="d5c15231-3ce0-4634-81b6-54993e459213" data-section_id="d5c15231-3ce0-4634-81b6-54993e459213" class="page_sectionHighlight__ahPeD sectionCode">
+                
+<div id="root">
+  <section id="customsTax" class="relative min-h-screen bg-neutral-900 overflow-hidden">
+    <div class="container mx-auto px-4 py-16" id="el-l8eoueqn">
+      <!-- Main Tax Estimation Panel -->
+      <div class="backdrop-blur-lg bg-white/10 rounded-2xl border border-white/20 p-8 shadow-2xl" id="el-0619v3i2">
+        <h2 class="text-4xl font-bold text-green-400 mb-8 animate-pulse" id="el-y5x83bo1">
+          Customs &amp; Tax Estimation
+        </h2>
+
+        <!-- Real-time Calculator -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12" id="el-p22k18h3">
+          <!-- Cost Breakdown -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-green-500/30" id="el-g2w0f22k">
+            <h3 class="text-2xl text-green-300 mb-6" id="el-6hkzf5j6">Cost Breakdown</h3>
+            
+            <!-- Floating Cost Elements -->
+            <div class="space-y-6" id="el-gv5sql8p">
+              <div class="flex justify-between items-center animate-float" id="el-cre9wyp6">
+                <span class="text-white" id="el-efie1jok">Import Duty (12%)</span>
+                <span class="text-green-400" id="el-ry3m8ox5">$240.00</span>
+              </div>
+              <div class="flex justify-between items-center animate-float delay-100" id="el-zy0ayoy5">
+                <span class="text-white" id="el-xnfqyk8w">VAT (20%)</span>
+                <span class="text-green-400" id="el-ys0boesg">$400.00</span>
+              </div>
+              <div class="flex justify-between items-center animate-float delay-200" id="el-n5lkfxzi">
+                <span class="text-white" id="el-23449phf">Processing Fee</span>
+                <span class="text-green-400" id="el-94wdqtgu">$50.00</span>
+              </div>
+              <div class="h-px bg-green-500/20 my-4" id="el-x3kihb0s"></div>
+              <div class="flex justify-between items-center text-xl" id="el-sszwaeka">
+                <span class="text-white font-bold" id="el-eh6fo854">Total Estimated Cost</span>
+                <span class="text-green-400 font-bold" id="el-yuyoadze">$690.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Optimization Tips -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-blue-500/30" id="el-1xaiepew">
+            <h3 class="text-2xl text-blue-300 mb-6" id="el-7zwvei0x">AI Cost-Saving Tips</h3>
+            
+            <div class="space-y-4" id="el-mtnd5924">
+              <div class="bg-blue-500/10 rounded-lg p-4 animate-float" id="el-6vgqnr3v">
+                <p class="text-blue-300" id="el-c97dh4v3">💡 Consolidate shipments to save 15% on duties</p>
+              </div>
+              <div class="bg-blue-500/10 rounded-lg p-4 animate-float delay-100" id="el-0rdu3std">
+                <p class="text-blue-300" id="el-jd3wcrwf">💡 Eligible for preferential trade agreement</p>
+              </div>
+              <div class="bg-blue-500/10 rounded-lg p-4 animate-float delay-200" id="el-giu6abth">
+                <p class="text-blue-300" id="el-vnl1sbho">💡 Update HS code to reduce duty rate by 5%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Estimator -->
+        <div class="backdrop-blur-md bg-white/5 rounded-xl p-6 border border-purple-500/30" id="el-vcp73zvb">
+          <h3 class="text-2xl text-purple-300 mb-6" id="el-c825xhuh">Live Cost Estimator</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="el-ul2j4nlr">
+            <div class="space-y-2" id="el-3axqkn0d">
+              <label class="text-white" id="el-0flfr8ji">Item Value</label>
+              <input type="number" class="w-full bg-neutral-800/50 border border-purple-500/30 rounded-lg p-2 text-white" placeholder="Enter value" id="el-birkbuig">
+            </div>
+            <div class="space-y-2" id="el-ku71jcq5">
+              <label class="text-white" id="el-mghinpf9">Origin Country</label>
+              <select class="w-full bg-neutral-800/50 border border-purple-500/30 rounded-lg p-2 text-white" id="el-pqmsmsvt">
+                <option id="el-ekjqeprp">Select country</option>
+                <option id="el-3ot8oz57">USA</option>
+                <option id="el-6k5bnczu">China</option>
+                <option id="el-okjrw31l">EU</option>
+              </select>
+            </div>
+            <div class="space-y-2" id="el-wsppkczl">
+              <label class="text-white" id="el-n209to1z">HS Code</label>
+              <input type="text" class="w-full bg-neutral-800/50 border border-purple-500/30 rounded-lg p-2 text-white" placeholder="Enter HS code" id="el-7hgyskri">
+            </div>
+          </div>
+
+          <button class="mt-6 bg-gradient-to-r from-purple-500 to-blue-500 text-white py-3 px-8 rounded-lg transform hover:scale-105 transition-all duration-300" id="el-cc4ojr1j">
+            Calculate Estimate
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Background Elements -->
+    <div class="absolute top-0 left-0 w-full h-full -z-10" id="el-a7b753v5">
+      <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-green-500/10 rounded-full filter blur-3xl animate-pulse" id="el-c9pepkti"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-blue-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" id="el-6tkx7k2t"></div>
+    </div>
+  </section>
+</div>
+
+              </div>
+            
+              <div id="16dd96ef-5b18-4a9a-9840-e43d0e9aca14" data-section_id="16dd96ef-5b18-4a9a-9840-e43d0e9aca14" class="page_sectionHighlight__ahPeD sectionCode">
+                
+<div id="root">
+  <section id="tracking" class="relative min-h-screen bg-neutral-900 overflow-hidden">
+    <div class="container mx-auto px-4 py-16" id="el-50ngx14g">
+      <!-- Main Tracking Panel -->
+      <div class="backdrop-blur-lg bg-white/10 rounded-2xl border border-white/20 p-8 shadow-2xl" id="el-tdfqn04g">
+        <h2 class="text-4xl font-bold text-cyan-400 mb-8 animate-pulse" id="el-xqegzyni">
+          Real-Time Tracking
+        </h2>
+
+        <!-- 3D Progress Timeline -->
+        <div class="relative h-48 mb-12" id="el-h813rvnv">
+          <div class="absolute inset-0 flex items-center" id="el-mq18s9dc">
+            <!-- Progress Line -->
+            <div class="h-2 bg-neutral-700 w-full rounded-full" id="el-e5zymnpi">
+              <div class="h-full w-2/3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full animate-pulse" id="el-2nu091i3"></div>
+            </div>
+
+            <!-- Checkpoints -->
+            <div class="absolute inset-0 flex justify-between items-center" id="el-onkh5jmz">
+              <!-- Origin -->
+              <div class="relative" id="el-5ja1t9or">
+                <div class="w-8 h-8 bg-green-500 rounded-full animate-pulse" id="el-586s0jzi"></div>
+                <p class="absolute -bottom-8 text-green-400 whitespace-nowrap" id="el-xu7i2v1k">Origin</p>
+              </div>
+
+              <!-- Customs -->
+              <div class="relative" id="el-0qncbdbr">
+                <div class="w-8 h-8 bg-cyan-500 rounded-full animate-pulse" id="el-f43ngac7"></div>
+                <p class="absolute -bottom-8 text-cyan-400 whitespace-nowrap" id="el-tmob4xb4">Customs Clearance</p>
+              </div>
+
+              <!-- Transit -->
+              <div class="relative" id="el-qiz5iqj6">
+                <div class="w-8 h-8 bg-purple-500 rounded-full animate-pulse" id="el-fkt3jsvr"></div>
+                <p class="absolute -bottom-8 text-purple-400 whitespace-nowrap" id="el-0tcfnvxt">In Transit</p>
+              </div>
+
+              <!-- Destination -->
+              <div class="relative" id="el-siglqf5a">
+                <div class="w-8 h-8 bg-neutral-500 rounded-full" id="el-69jm9h4x"></div>
+                <p class="absolute -bottom-8 text-neutral-400 whitespace-nowrap" id="el-ojxnj29w">Destination</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Current Status & Predictions -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12" id="el-3e21c0rj">
+          <!-- Current Status -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-cyan-500/30" id="el-p6xhw1zq">
+            <h3 class="text-2xl text-cyan-300 mb-6" id="el-yjkb8694">Current Status</h3>
+            <div class="space-y-4" id="el-cted29t5">
+              <div class="flex items-center space-x-4 animate-float" id="el-fmpfh3tq">
+                <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse" id="el-0q9dtoe1"></div>
+                <p class="text-white" id="el-fhotldkg">Package in transit to Amsterdam Hub</p>
+              </div>
+              <div class="flex items-center space-x-4 animate-float delay-100" id="el-cm5nw6yz">
+                <div class="w-3 h-3 bg-cyan-500 rounded-full animate-pulse" id="el-fyvfd2am"></div>
+                <p class="text-white" id="el-zfmcryrt">Customs clearance completed</p>
+              </div>
+              <div class="flex items-center space-x-4 animate-float delay-200" id="el-wb25rjns">
+                <div class="w-3 h-3 bg-purple-500 rounded-full animate-pulse" id="el-m6jgr3j3"></div>
+                <p class="text-white" id="el-t6qi8fvi">Expected delivery: 2 days</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Predictions -->
+          <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-purple-500/30" id="el-1tomvx5m">
+            <h3 class="text-2xl text-purple-300 mb-6" id="el-h9fm41om">AI Predictions</h3>
+            <div class="space-y-4" id="el-fo4tfhk7">
+              <div class="bg-purple-500/10 rounded-lg p-4 animate-float" id="el-lhpogw64">
+                <p class="text-purple-300" id="el-6veyt6a5">⚡ No delays predicted</p>
+              </div>
+              <div class="bg-purple-500/10 rounded-lg p-4 animate-float delay-100" id="el-3tdnr1t1">
+                <p class="text-purple-300" id="el-7q2dvok7">🌤️ Weather conditions optimal</p>
+              </div>
+              <div class="bg-purple-500/10 rounded-lg p-4 animate-float delay-200" id="el-z57bqzj1">
+                <p class="text-purple-300" id="el-9pv7pv7g">📦 98% on-time delivery confidence</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Holographic Alerts -->
+        <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-blue-500/30" id="el-8iy6dkf6">
+          <h3 class="text-2xl text-blue-300 mb-6" id="el-bv2b35iw">Live Updates</h3>
+          <div class="space-y-4" id="el-z74gi754">
+            <div class="flex items-center justify-between bg-blue-500/10 rounded-lg p-4 animate-float" id="el-h3ry2dsf">
+              <p class="text-blue-300" id="el-x9vf1uxu">Package scanned at Amsterdam Hub</p>
+              <span class="text-blue-400" id="el-h3bi7qqd">2 mins ago</span>
+            </div>
+            <div class="flex items-center justify-between bg-green-500/10 rounded-lg p-4 animate-float delay-100" id="el-emkfp2u4">
+              <p class="text-green-300" id="el-af3wkte9">Temperature conditions: Optimal</p>
+              <span class="text-green-400" id="el-fs493jr5">5 mins ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute top-0 left-0 w-full h-full -z-10" id="el-mv3bgfmw">
+      <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse" id="el-5l5y1g7d"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" id="el-7ykr1mfx"></div>
+    </div>
+  </section>
+</div>
+
+              </div>
+            
+              <div id="a46df49d-b66d-45a0-ae9e-d12c98d82a26" data-section_id="a46df49d-b66d-45a0-ae9e-d12c98d82a26" class="page_sectionHighlight__ahPeD sectionCode">
+                <div id="root">
+  <section id="integration" class="relative bg-neutral-800 py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" id="el-0ef93um4">
+      <!-- Section Header -->
+      <div class="text-center mb-16" id="el-5j0p4uyd">
+        <h2 class="text-4xl font-bold bg-gradient-to-r from-[#FF00FF] to-[#00F5FF] bg-clip-text text-transparent mb-4 animate__animated animate__fadeInUp" id="el-hz09tin1">API Integrations</h2>
+        <p class="text-neutral-300 max-w-2xl mx-auto" id="el-5epiidjw">Seamless connectivity with global shipping and compliance systems</p>
+      </div>
+
+      <!-- Integration Grid -->
+      <div class="grid lg:grid-cols-3 gap-8" id="el-p2n5lq7t">
+        <!-- Carrier APIs -->
+        <div class="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-6 border border-[#FF00FF]/20 hover:transform hover:scale-105 transition-all duration-300" id="el-jvubzjgr">
+          <div class="flex items-center space-x-4 mb-6" id="el-rd07lxmm">
+            <div class="h-12 w-12 rounded-lg bg-[#FF00FF]/20 flex items-center justify-center" id="el-k3uo84qn">
+              <span class="text-2xl" id="el-b6vppeic">🚚</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#FF00FF]" id="el-2xfjogwn">Carrier APIs</h3>
+          </div>
+          <div class="space-y-3" id="el-3w8581l0">
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-zs2gledh">
+              <span class="text-neutral-300" id="el-h7ha1p6m">FedEx</span>
+              <div class="h-2 w-2 bg-green-500 rounded-full" id="el-2uip9i1f"></div>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-6ea9v82d">
+              <span class="text-neutral-300" id="el-5ur5h80x">DHL</span>
+              <div class="h-2 w-2 bg-green-500 rounded-full" id="el-07ojms8q"></div>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-6ixstl1k">
+              <span class="text-neutral-300" id="el-822kf8en">UPS</span>
+              <div class="h-2 w-2 bg-green-500 rounded-full" id="el-aewphjhv"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Government Database -->
+        <div class="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-6 border border-[#00F5FF]/20 hover:transform hover:scale-105 transition-all duration-300" id="el-g5ytogob">
+          <div class="flex items-center space-x-4 mb-6" id="el-qn29e66t">
+            <div class="h-12 w-12 rounded-lg bg-[#00F5FF]/20 flex items-center justify-center" id="el-rl2y0wes">
+              <span class="text-2xl" id="el-8u9622vh">🏛️</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#00F5FF]" id="el-yrsv067t">Government APIs</h3>
+          </div>
+          <div class="space-y-3" id="el-xpclm8ya">
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-wa7un874">
+              <span class="text-neutral-300" id="el-dkwgq3ke">Customs Database</span>
+              <div class="h-2 w-2 bg-green-500 rounded-full animate-pulse" id="el-otczhqa5"></div>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-9n5prn3g">
+              <span class="text-neutral-300" id="el-7z98nfju">Trade Regulations</span>
+              <div class="h-2 w-2 bg-green-500 rounded-full animate-pulse" id="el-sjndoqma"></div>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-9r5v1pwf">
+              <span class="text-neutral-300" id="el-qdy204rf">HS Code Database</span>
+              <div class="h-2 w-2 bg-green-500 rounded-full animate-pulse" id="el-nwo7xpdl"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Webhook System -->
+        <div class="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-6 border border-[#FF00FF]/20 hover:transform hover:scale-105 transition-all duration-300" id="el-1a9mndxm">
+          <div class="flex items-center space-x-4 mb-6" id="el-frkrlwa0">
+            <div class="h-12 w-12 rounded-lg bg-[#FF00FF]/20 flex items-center justify-center" id="el-m9dcrmp9">
+              <span class="text-2xl" id="el-pco1xykf">🔗</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#FF00FF]" id="el-ubn2vprt">Webhooks</h3>
+          </div>
+          <div class="space-y-3" id="el-ta9z092g">
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-nviyxilh">
+              <span class="text-neutral-300" id="el-tosoto0y">Status Updates</span>
+              <div class="h-2 w-2 bg-blue-500 rounded-full animate-ping" id="el-uije3b06"></div>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-gfko7xgt">
+              <span class="text-neutral-300" id="el-wagd90rx">Document Processing</span>
+              <div class="h-2 w-2 bg-blue-500 rounded-full animate-ping" id="el-eogb1rz0"></div>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-neutral-800/50 rounded-lg" id="el-vysgfgp5">
+              <span class="text-neutral-300" id="el-t4j7bocx">Alert System</span>
+              <div class="h-2 w-2 bg-blue-500 rounded-full animate-ping" id="el-mi5tcg1c"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Data Stream -->
+      <div class="mt-12 bg-neutral-900/50 backdrop-blur-sm rounded-xl p-6 border border-[#00F5FF]/20" id="el-2hljo18q">
+        <h3 class="text-[#00F5FF] font-bold mb-6" id="el-kydlbnn6">Live Data Stream</h3>
+        <div class="h-32 relative overflow-hidden" id="el-nyi0z85f">
+          <div class="absolute inset-0" id="el-qo78nllx">
+            <div class="animate-stream absolute whitespace-nowrap text-neutral-500" id="el-bkoexaju">
+              {"status":"success","carrier":"FedEx","tracking":"1234567890"} {...} {"event":"customs_cleared","location":"Dubai"} {...}
+              {"status":"processing","type":"documentation"} {...} {"alert":"weather_delay","severity":"low"} {...}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute inset-0 z-0" id="el-4qc8cnpb">
+      <div class="absolute inset-0 bg-[radial-gradient(#00F5FF_1px,transparent_1px)] opacity-5 [background-size:20px_20px]" id="el-58awwz2i"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#FF00FF]/5 via-transparent to-[#00F5FF]/5" id="el-lvca7bfr"></div>
+    </div>
+  </section>
+</div>
+
+<style>
+@keyframes stream {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+.animate-stream {
+  animation: stream 20s linear infinite;
+}
+</style>
+              </div>
+            
+              <div id="0643079e-dbbd-4064-8656-0de2305c3dc8" data-section_id="0643079e-dbbd-4064-8656-0de2305c3dc8" class="page_sectionHighlight__ahPeD sectionCode">
+                <div id="root">
+  <section id="pricing" class="relative min-h-screen bg-neutral-900 overflow-hidden">
+    <div class="container mx-auto px-4 py-16" id="el-7oijp2nr">
+      <!-- Pricing Header -->
+      <div class="text-center mb-16" id="el-du0zcc4j">
+        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-4 animate-pulse" id="el-gbf9ha5w">
+          Smart Pricing Plans
+        </h2>
+        <p class="text-white/60" id="el-nse7d5xh">Choose the perfect plan for your shipping needs</p>
+      </div>
+
+      <!-- Pricing Cards Container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" id="el-7tv7lgop">
+        <!-- Basic Plan -->
+        <div class="backdrop-blur-lg bg-white/5 rounded-2xl border border-cyan-500/20 p-8 hover:border-cyan-500/50 transition-all duration-300 transform hover:-translate-y-2" id="el-i3pk8vrk">
+          <div class="text-center mb-8" id="el-tl1wp3yb">
+            <h3 class="text-2xl font-bold text-cyan-400 mb-4" id="el-67dr811b">Starter</h3>
+            <div class="text-4xl font-bold text-white mb-2" id="el-m8bmj2zm">$49<span class="text-lg text-white/60" id="el-tmyrhmji">/mo</span></div>
+            <p class="text-white/60" id="el-yev4mljj">For small businesses</p>
+          </div>
+
+          <ul class="space-y-4 mb-8" id="el-bo8ydq65">
+            <li class="flex items-center text-white/80" id="el-8xx8vt5q">
+              <svg class="w-5 h-5 text-cyan-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-7y8ovfb5">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-5gclmxcl"></path>
+              </svg>
+              Basic AI Compliance Check
+            </li>
+            <li class="flex items-center text-white/80" id="el-2rx69oo4">
+              <svg class="w-5 h-5 text-cyan-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-ffvklz8t">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-vgazg5x2"></path>
+              </svg>
+              100 Shipments/month
+            </li>
+            <li class="flex items-center text-white/80" id="el-fbnzuuru">
+              <svg class="w-5 h-5 text-cyan-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-19zokvzo">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-441z3z2y"></path>
+              </svg>
+              Basic Route Optimization
+            </li>
+          </ul>
+
+          <button class="w-full bg-gradient-to-r from-cyan-500 to-cyan-600 text-white py-3 rounded-lg hover:from-cyan-600 hover:to-cyan-700 transition-all duration-300" id="el-jrz8fsju">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="backdrop-blur-lg bg-white/5 rounded-2xl border border-purple-500/20 p-8 hover:border-purple-500/50 transition-all duration-300 transform hover:-translate-y-2 scale-105" id="el-an2xj4sq">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2" id="el-ogo76qkb">
+            <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm" id="el-6hrcg6r3">
+              Most Popular
+            </span>
+          </div>
+
+          <div class="text-center mb-8" id="el-7e68te7b">
+            <h3 class="text-2xl font-bold text-purple-400 mb-4" id="el-3pgk2zet">Professional</h3>
+            <div class="text-4xl font-bold text-white mb-2" id="el-fwm4hcgw">$149<span class="text-lg text-white/60" id="el-z7akr3g2">/mo</span></div>
+            <p class="text-white/60" id="el-ff1pibpw">For growing companies</p>
+          </div>
+
+          <ul class="space-y-4 mb-8" id="el-bdb4954s">
+            <li class="flex items-center text-white/80" id="el-ikchvxfb">
+              <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-yfhqtru7">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-ap020jrz"></path>
+              </svg>
+              Advanced AI Compliance
+            </li>
+            <li class="flex items-center text-white/80" id="el-3jdpx8cs">
+              <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-0y5d6jtw">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-bcncsmse"></path>
+              </svg>
+              Unlimited Shipments
+            </li>
+            <li class="flex items-center text-white/80" id="el-zdug5h8w">
+              <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-omzn53q6">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-ukc7b2o9"></path>
+              </svg>
+              Full API Access
+            </li>
+            <li class="flex items-center text-white/80" id="el-h9r48sp4">
+              <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-vnm829ou">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-p8u0arw6"></path>
+              </svg>
+              24/7 Priority Support
+            </li>
+          </ul>
+
+          <button class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300" id="el-hw7twnak">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="backdrop-blur-lg bg-white/5 rounded-2xl border border-blue-500/20 p-8 hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-2" id="el-vxerrgwa">
+          <div class="text-center mb-8" id="el-2ako7kss">
+            <h3 class="text-2xl font-bold text-blue-400 mb-4" id="el-m1uevey2">Enterprise</h3>
+            <div class="text-4xl font-bold text-white mb-2" id="el-s45m5m9r">Custom</div>
+            <p class="text-white/60" id="el-m9vpopdb">For large organizations</p>
+          </div>
+
+          <ul class="space-y-4 mb-8" id="el-6suz7a2w">
+            <li class="flex items-center text-white/80" id="el-gfh5jrk2">
+              <svg class="w-5 h-5 text-blue-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-yxj3prqp">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-iqenlv94"></path>
+              </svg>
+              Custom AI Solutions
+            </li>
+            <li class="flex items-center text-white/80" id="el-8mrc3ga9">
+              <svg class="w-5 h-5 text-blue-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-ysnl3q3d">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-xiwcl40p"></path>
+              </svg>
+              Dedicated Support Team
+            </li>
+            <li class="flex items-center text-white/80" id="el-1kywvzsp">
+              <svg class="w-5 h-5 text-blue-400 mr-3" fill="currentColor" viewBox="0 0 20 20" id="el-7e6sgj91">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-0jo27340"></path>
+              </svg>
+              Custom Integration
+            </li>
+          </ul>
+
+          <button class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300" id="el-v29mscmi">
+            Contact Sales
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute top-0 left-0 w-full h-full -z-10" id="el-huadrzu1">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse" id="el-48t6bbay"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" id="el-sbpvvup3"></div>
+    </div>
+  </section>
+</div>
+              </div>
+            
+              <div id="74e31ec3-55c8-41cd-a5be-23c9d236da7a" data-section_id="74e31ec3-55c8-41cd-a5be-23c9d236da7a" class="page_sectionHighlight__ahPeD sectionCode">
+                <div id="root">
+  <section id="contact" class="relative min-h-screen bg-neutral-900 overflow-hidden">
+    <div class="container mx-auto px-4 py-16" id="el-5rtnzbdw">
+      <div class="backdrop-blur-lg bg-white/10 rounded-2xl border border-white/20 p-8 shadow-2xl max-w-4xl mx-auto" id="el-52q41qmc">
+        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-8 text-center animate-pulse" id="el-qk728km1">
+          Connect With Us
+        </h2>
+
+        <!-- Contact Form -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12" id="el-usr9r739">
+          <!-- Form Section -->
+          <div class="space-y-6" id="el-ef4ktnya">
+            <div class="space-y-2" id="el-98virqym">
+              <label class="text-white/80 block" id="el-5ieht78e">Name</label>
+              <input type="text" class="w-full bg-neutral-800/50 border border-purple-500/30 rounded-lg p-3 text-white focus:border-purple-500 transition-all duration-300" placeholder="Enter your name" id="el-0a5aplrs">
+            </div>
+
+            <div class="space-y-2" id="el-s4qh4nt4">
+              <label class="text-white/80 block" id="el-utsfmhpr">Email</label>
+              <input type="email" class="w-full bg-neutral-800/50 border border-purple-500/30 rounded-lg p-3 text-white focus:border-purple-500 transition-all duration-300" placeholder="Enter your email" id="el-0e2uldrs">
+            </div>
+
+            <div class="space-y-2" id="el-yxut2iaz">
+              <label class="text-white/80 block" id="el-t5cfash0">Subject</label>
+              <select class="w-full bg-neutral-800/50 border border-purple-500/30 rounded-lg p-3 text-white focus:border-purple-500 transition-all duration-300" id="el-m2g4lnht">
+                <option id="el-83z42koe">Technical Support</option>
+                <option id="el-pqxkjd4m">Sales Inquiry</option>
+                <option id="el-pbzpqaon">Partnership</option>
+                <option id="el-p8axtxf5">Other</option>
+              </select>
+            </div>
+
+            <div class="space-y-2" id="el-e4z427xv">
+              <label class="text-white/80 block" id="el-ojqiu996">Message</label>
+              <textarea class="w-full bg-neutral-800/50 border border-purple-500/30 rounded-lg p-3 text-white focus:border-purple-500 transition-all duration-300 h-32" placeholder="Your message" id="el-3fcekpnt"></textarea>
+            </div>
+
+            <button class="w-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white py-3 rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105" id="el-0upe0r4h">
+              Send Message
+            </button>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="space-y-8" id="el-p4zdrv0y">
+            <!-- AI Assistant -->
+            <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-cyan-500/30 hover:border-cyan-500/50 transition-all duration-300" id="el-n5nrzxjh">
+              <h3 class="text-xl text-cyan-400 mb-4" id="el-f7zxbibp">AI Voice Assistant</h3>
+              <p class="text-white/60 mb-4" id="el-lkb1evq5">Get instant help with our AI assistant</p>
+              <button class="flex items-center space-x-2 bg-cyan-500/20 text-cyan-400 py-2 px-4 rounded-lg hover:bg-cyan-500/30 transition-all duration-300" id="el-qh8c80xr">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-extvtn4r">
+                  <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" id="el-tqst825s"></path>
+                </svg>
+                <span id="el-p9ljldij">Start Voice Chat</span>
+              </button>
+            </div>
+
+            <!-- Live Chat -->
+            <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300" id="el-ys7ux63d">
+              <h3 class="text-xl text-purple-400 mb-4" id="el-48kup7ov">Live Support</h3>
+              <p class="text-white/60 mb-4" id="el-twm5rn4b">Chat with our support team</p>
+              <button class="flex items-center space-x-2 bg-purple-500/20 text-purple-400 py-2 px-4 rounded-lg hover:bg-purple-500/30 transition-all duration-300" id="el-n09sl9ry">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-hrh45a4v">
+                  <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" id="el-akpltbi1"></path>
+                  <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" id="el-63a3jvle"></path>
+                </svg>
+                <span id="el-2mo0v8g8">Start Chat</span>
+              </button>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-blue-500/30 hover:border-blue-500/50 transition-all duration-300" id="el-i09y5ddd">
+              <h3 class="text-xl text-blue-400 mb-4" id="el-4hgyxrcm">Other Channels</h3>
+              <div class="space-y-4" id="el-15k09fe2">
+                <div class="flex items-center space-x-3 text-white/80" id="el-jkmpi1xc">
+                  <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20" id="el-hmowjn5m">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" id="el-dr3qtqpn"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" id="el-ogx37cf0"></path>
+                  </svg>
+                  <span id="el-yezspwr2">support@smartparcel.ai</span>
+                </div>
+                <div class="flex items-center space-x-3 text-white/80" id="el-s1le2q8h">
+                  <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20" id="el-930si9le">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" id="el-yjjpf1jh"></path>
+                  </svg>
+                  <span id="el-mriawxvg">+1 (888) 123-4567</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute top-0 left-0 w-full h-full -z-10" id="el-ms9o7abl">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse" id="el-6ddqxhw9"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" id="el-55qpu79o"></div>
+    </div>
+  </section>
+</div>
+              </div>
+            
+              <div id="2a6aeb2f-b3c6-407a-8842-64a8b27c5a5c" data-section_id="2a6aeb2f-b3c6-407a-8842-64a8b27c5a5c" class="page_sectionHighlight__ahPeD sectionCode">
+                <div id="root">
+  <footer id="footer" class="relative bg-neutral-900 pt-16 pb-8">
+    <div class="container mx-auto px-4" id="el-jji2txm3">
+      <!-- Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16" id="el-rbox6b7n">
+        <!-- Company Info -->
+        <div class="space-y-4" id="el-f2n50v8i">
+          <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400" id="el-4vt8wddb">
+            SmartParcel AI
+          </h3>
+          <p class="text-white/60" id="el-8l02d8mq">
+            Next-generation AI-powered shipping compliance and optimization platform
+          </p>
+          <div class="flex space-x-4" id="el-21rkn0bc">
+            <a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-o5afl1hd">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-ngswvj3z">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" id="el-jjrc0cum"></path>
+              </svg>
+            </a>
+            <a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-mvcftia0">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-ktsvr751">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" id="el-a5j97m7z"></path>
+              </svg>
+            </a>
+            <a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-3twwqy4z">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-qj646par">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" id="el-yayd181v"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-4" id="el-hnuvovla">
+          <h4 class="text-lg font-semibold text-white" id="el-lrbftb1h">Quick Links</h4>
+          <ul class="space-y-2" id="el-40qmd6x5">
+            <li id="el-dfby2iaj"><a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-ouvxo6pp">Home</a></li>
+            <li id="el-lra18cwm"><a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-2mb3p47z">Features</a></li>
+            <li id="el-l6chyv2h"><a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-btzhfrjm">Pricing</a></li>
+            <li id="el-3n39l964"><a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-txd14opi">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="space-y-4" id="el-z45wwm2z">
+          <h4 class="text-lg font-semibold text-white" id="el-2ver79gu">Legal</h4>
+          <ul class="space-y-2" id="el-lbt58399">
+            <li id="el-mole9kw5"><a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-7ixovzid">Privacy Policy</a></li>
+            <li id="el-5uu8e2pu"><a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-6c4rpf70">Terms of Service</a></li>
+            <li id="el-ht8v81gv"><a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-txuuu8rd">Cookie Policy</a></li>
+            <li id="el-ush66hqk"><a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors" id="el-31bs10hb">GDPR</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="space-y-4" id="el-m7f4ssp4">
+          <h4 class="text-lg font-semibold text-white" id="el-s84rcygt">Stay Updated</h4>
+          <p class="text-white/60" id="el-3qhr96fb">Subscribe to our newsletter</p>
+          <div class="flex space-x-2" id="el-ke7e9eru">
+            <input type="email" class="flex-1 bg-neutral-800/50 border border-purple-500/30 rounded-lg px-4 py-2 text-white focus:border-purple-500 transition-all duration-300" placeholder="Enter your email" id="el-ulxidyo9">
+            <button class="bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-4 py-2 rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300" id="el-2mpq485l">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/10 pt-8" id="el-yvikgo2n">
+        <div class="flex flex-col md:flex-row justify-between items-center" id="el-mjiggws9">
+          <p class="text-white/60 text-sm" id="el-2nq96sdt">
+            © 2024 SmartParcel AI. All rights reserved.
+          </p>
+          <div class="flex space-x-4 mt-4 md:mt-0" id="el-869ynqhg">
+            <a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors text-sm" id="el-9g4gupz5">Security</a>
+            <a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors text-sm" id="el-lub55bkb">Accessibility</a>
+            <a href="https://rollout.site/projects/smartparcel-aivzrw/edit#" class="text-white/60 hover:text-cyan-400 transition-colors text-sm" id="el-ovjfbfbd">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="absolute bottom-0 left-0 w-full h-full -z-10 opacity-30" id="el-dga8ds1o">
+      <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-cyan-500/10 rounded-full filter blur-3xl" id="el-442j1050"></div>
+      <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full filter blur-3xl" id="el-u0b81h8z"></div>
+    </div>
+  </footer>
+</div>
+              </div>
+            
+      </main>
+
+      <!-- {bodyScripts} -->
+      
+
+   
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><div class="selection-overlay" style="position: absolute; pointer-events: none; background: linear-gradient(45deg, rgba(221, 255, 0, 0.15) 0%, rgba(221, 255, 0, 0.2) 100%); border: 2px solid rgba(221, 255, 0, 0.85); box-shadow: rgba(221, 255, 0, 0.3) 0px 0px 8px; border-radius: 0px; top: 415.512px; left: 0px; width: 1179.2px; height: 593.6px; transform: none; transform-origin: 589.6px 296.8px; transition: all; z-index: 9998; opacity: 1; display: block; overflow: hidden;"></div><div class="hover-overlay" style="position: absolute; pointer-events: none; background: linear-gradient(-45deg, rgba(0, 255, 255, 0.03) 0%, rgba(0, 150, 255, 0.06) 50%, rgba(0, 255, 255, 0.03) 100%); border: 1px dashed rgba(0, 200, 255, 0.4); box-shadow: none; border-radius: 8px; top: 6128.33px; left: 630.4px; width: 397.6px; height: 56px; transform: matrix(1, 0, 0, 1, 0, -9.57841); transform-origin: 198.8px 28px; transition: all; z-index: 9999; opacity: 1; display: block; overflow: hidden;"></div><div id="el-ucid6eg3" style="position: absolute; background-color: rgba(70, 80, 0, 0.95); color: rgb(221, 255, 0); padding: 4px 12px; border-radius: 6px; font-size: 13px; font-weight: 500; font-family: &quot;Clash Display&quot;, system-ui, -apple-system, sans-serif; pointer-events: none; z-index: 10000; display: block; white-space: nowrap; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px; transform-origin: center center; transition: 0.2s cubic-bezier(0.2, 0, 0, 1); top: 698.312px; left: 543.6px;">🎯 Division</div></body></html>
